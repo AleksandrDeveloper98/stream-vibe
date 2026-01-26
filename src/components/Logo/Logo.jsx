@@ -14,7 +14,7 @@ const Logo = (props) => {
     >
       <img
         alt=""
-        src="/icons/logo.svg"
+        src="/logo.svg"
         height={60}
         width={200}
         className="logo__image"
