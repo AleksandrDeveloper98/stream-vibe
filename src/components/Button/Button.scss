@@ -6,6 +6,7 @@
   color: var(--color-white);
   background-color: var(--color-red-45);
   border: none;
+  text-align: center;
   border-radius: var(--border-radius-s);
   user-select: none;
   cursor: pointer;
@@ -46,9 +47,17 @@
     }
   }
 
+  &--black-08,
+  &--black-10 {
+    border: var(--border);
+  }
+
+  &--black-08 {
+    background-color: var(--color-black-08);
+  }
+
   &--black-10 {
     background-color: var(--color-black-10);
-    border: var(--border);
   }
 
   &--dark {

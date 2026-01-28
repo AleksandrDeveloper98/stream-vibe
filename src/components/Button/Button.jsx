@@ -12,7 +12,7 @@ const Button = (props) => {
     target,
     iconName,
     /**
-     * "" (default)  | 'transparent' | black-10
+     * "" (default)  | 'transparent' | black-10 | black-08
      */
     mode = '',
     /**
