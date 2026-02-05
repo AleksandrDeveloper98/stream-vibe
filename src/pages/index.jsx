@@ -16,7 +16,7 @@ export default function () {
       <Categories />
       <Devices />
       <Questions />
-      <Plans />
+      <Plans />      
     </>
   )
 }
