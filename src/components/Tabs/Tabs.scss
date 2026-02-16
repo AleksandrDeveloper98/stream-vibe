@@ -1,7 +1,22 @@
-.tabs{
-    &__content{
-        &:not(.is-active){
-            display: none;
-        }
+.tabs {
+  --tabsBodyRowGrap: 0;
+  --tabsNonActiveContentDisplay: none;
+
+  &--enable-only-on-mobile {
+    @include mobile-above {
+      --tabsNonActiveContentDisplay: block;
+      --tabsNavigationDisplay: none;
     }
+  }
+
+  &__body{
+    display: grid;
+    row-gap: var(--tabsBodyRowGrap);
+  }
+
+  &__content {
+    &:not(.is-active) {
+      display: var(--tabsNonActiveContentDisplay);
+    }
+  }
 }
