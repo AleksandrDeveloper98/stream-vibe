@@ -9,6 +9,7 @@ const Header = (props) => {
   const menuItems = [
     { label: "Home", href: "/" },
     { label: "Movies & Shows", href: "/movies" },
+    { label: "Shows", href: "/shows" },
     { label: "Support", href: "/support" },
     { label: "Subscriptions", href: "/subscriptions" },
   ]
