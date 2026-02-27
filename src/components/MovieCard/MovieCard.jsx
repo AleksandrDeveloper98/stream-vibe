@@ -12,7 +12,7 @@ const MovieCard = (props) => {
     views,
     season,
     rating,
-    href = "/move",
+    href = "/movie",
   } = props
 
   return (
