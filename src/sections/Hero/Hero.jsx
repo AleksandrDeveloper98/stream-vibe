@@ -1,3 +1,4 @@
+import getPath from "@/utils/getPath"
 import "./Hero.scss"
 import Button from "@/components/Button"
 
@@ -16,7 +17,7 @@ const Hero = () => {
           >
             <img
               className="hero__play-button-image"
-              src="/play.svg"
+              src={getPath("/play.svg")}
               alt=""
               width={470}
               height={470}

@@ -1,3 +1,4 @@
+import getPath from "@/utils/getPath"
 import "./RatingView.scss"
 
 const RatingView = (props) => {
@@ -16,14 +17,14 @@ const RatingView = (props) => {
     >
       <div className="rating-view__stars">
         <img
-          src="/rating/stars-unfilled.svg"
+          src={getPath("/rating/stars-unfilled.svg")}
           width={98}
           height={18}
           alt=""
           className="rating-view__stars-unfilled"
         />
         <img
-          src="/rating/stars-filled.svg"
+          src={getPath("/rating/stars-filled.svg")}
           width={98}
           height={18}
           alt=""

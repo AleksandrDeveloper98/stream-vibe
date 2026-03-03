@@ -1,3 +1,4 @@
+import getPath from "@/utils/getPath"
 import "./DeviceCard.scss"
 
 const DeviceCard = (props) => {
@@ -10,7 +11,7 @@ const DeviceCard = (props) => {
             className="device-card__image"
             width={40}
             height={40}
-            src={imgSrc}
+            src={getPath(imgSrc)}
             alt=""
             loading="lazy"
           />

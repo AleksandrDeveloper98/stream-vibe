@@ -1,3 +1,4 @@
+import getPath from "@/utils/getPath"
 import Link from "../Link"
 import "./Logo.scss"
 import classNames from "classnames"
@@ -15,7 +16,7 @@ const Logo = (props) => {
     >
       <img
         alt=""
-        src="/logo.svg"
+        src={getPath("/logo.svg")}
         height={60}
         width={200}
         className="logo__image"
