@@ -1,5 +1,6 @@
 import Socials from "@/components/Socials"
 import "./Footer.scss"
+import Link from "@/components/Link"
 
 const Footer = () => {
   const menuItems = [
@@ -42,23 +43,23 @@ const Footer = () => {
     },
   ]
 
-  const extraLinks = ["Terms of Use", "Privacy Policy", "Cookie Policy",]
+  const extraLinks = ["Terms of Use", "Privacy Policy", "Cookie Policy"]
   return (
     <footer className="footer">
       <div className="footer__inner container">
         <nav className="footer__menu">
           {menuItems.map(({ title, links, socialLinks }, index) => (
             <div className="footer__menu-column" key={index}>
-              <a href="/" className="footer__menu-title h6">
+              <Link href="/" className="footer__menu-title h6">
                 {title}
-              </a>
+              </Link>
               {links?.length > 0 && (
                 <ul className="footer__menu-list">
                   {links.map((link, index) => (
                     <li className="footer__menu-item" key={index}>
-                      <a href="/" className="footer__menu-link">
+                      <Link href="/" className="footer__menu-link">
                         {link}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -75,9 +76,9 @@ const Footer = () => {
           </p>
           <div className="footer__extra-links">
             {extraLinks.map((link, index) => (
-              <a href="/" className="footer__extra-link" key={index}>
+              <Link href="/" className="footer__extra-link" key={index}>
                 {link}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

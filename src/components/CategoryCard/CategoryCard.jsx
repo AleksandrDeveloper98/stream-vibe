@@ -2,12 +2,13 @@ import { Image } from "minista"
 import "./CategoryCard.scss"
 import Icon from "../Icon"
 import Badge from "../Badge"
+import Link from "../Link"
 
 const CategoryCard = (props) => {
   const { title, images = [], badge } = props
 
   return (
-    <a className="category-card" href="/movies">
+    <Link className="category-card" href="/movies">
       <div className="category-card__images">
         {images.map((imgSrc, index) => (
           <Image className="category-card__image" src={imgSrc} key={index} />
@@ -24,7 +25,7 @@ const CategoryCard = (props) => {
         </h3>
         <Icon className="category-card__icon" name="arrow-right" />
       </div>
-    </a>
+    </Link>
   )
 }
 

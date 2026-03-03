@@ -1,3 +1,4 @@
+import Link from "../Link"
 import "./Logo.scss"
 import classNames from "classnames"
 
@@ -6,7 +7,7 @@ const Logo = (props) => {
   const title = "Home"
 
   return (
-    <a
+    <Link
       href="/"
       className={classNames(className, "logo")}
       title={title}
@@ -20,7 +21,7 @@ const Logo = (props) => {
         className="logo__image"
         loading={loading}
       />
-    </a>
+    </Link>
   )
 }
 

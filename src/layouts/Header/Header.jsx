@@ -3,6 +3,7 @@ import "./Header.scss"
 import classNames from "classnames"
 import Button from "@/components/Button"
 import BurgerButton from "@/components/BurgerButton"
+import Link from "@/components/Link"
 
 const Header = (props) => {
   const { url, isFixed } = props
@@ -15,7 +16,10 @@ const Header = (props) => {
   ]
 
   return (
-    <header className={classNames('header', {'is-fixed' : isFixed})} data-js-overlay-menu="">
+    <header
+      className={classNames("header", { "is-fixed": isFixed })}
+      data-js-overlay-menu=""
+    >
       <div className="header__inner container">
         <Logo className="header__logo" loading="eager" />
         <dialog
@@ -26,14 +30,14 @@ const Header = (props) => {
             <ul className="header__menu-list">
               {menuItems.map(({ label, href }, index) => (
                 <li className="header__menu-item" key={index}>
-                  <a
+                  <Link
                     href={href}
                     className={classNames("header__menu-link", {
                       "is-active": href === url,
                     })}
                   >
                     {label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -55,8 +59,10 @@ const Header = (props) => {
             />
           </div>
         </dialog>
-        <BurgerButton className="header__burger-button visible-tablet" 
-        extraAttrs={{'data-js-overlay-menu-burger-button': ''}}/>
+        <BurgerButton
+          className="header__burger-button visible-tablet"
+          extraAttrs={{ "data-js-overlay-menu-burger-button": "" }}
+        />
       </div>
     </header>
   )

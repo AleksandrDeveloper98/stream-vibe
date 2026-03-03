@@ -2,6 +2,7 @@ import { Image } from "minista"
 import "./MovieCard.scss"
 import Badge from "../Badge"
 import RatingView from "../RatingView"
+import Link from "../Link"
 
 const MovieCard = (props) => {
   const {
@@ -16,7 +17,7 @@ const MovieCard = (props) => {
   } = props
 
   return (
-    <a className="movie-card" href={href} title={title}>
+    <Link className="movie-card" href={href} title={title}>
       <h3 className="visually-hidden">{title}</h3>
       <Image className="movie-card__image" src={imgSrc} />
       <div className="movie-card__body">
@@ -56,7 +57,7 @@ const MovieCard = (props) => {
           </Badge>
         )}
       </div>
-    </a>
+    </Link>
   )
 }
 
