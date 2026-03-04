@@ -1,6 +1,7 @@
 import classNames from "classnames"
 import "./Socials.scss"
 import Button from "../Button"
+import getPath from "@/utils/getPath"
 
 const Socials = (props) => {
   const { className, links = [] } = props
@@ -11,7 +12,7 @@ const Socials = (props) => {
           <li className="soc1als__item" key={index}>
             <Button
               className="soc1als__link"
-              href="/"
+              href={getPath('/')}
               mode="black-10"
               target="_blank"
               label={label}

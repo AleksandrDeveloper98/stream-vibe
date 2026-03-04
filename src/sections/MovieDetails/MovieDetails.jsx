@@ -7,6 +7,7 @@ import ReviewCard from "@/components/ReviewCard"
 import Tags from "@/components/Tags"
 import Ratings from "@/components/Ratings"
 import Icon from "@/components/Icon"
+import getPath from "@/utils/getPath"
 
 const MovieDetails = (props) => {
   const {
@@ -223,7 +224,7 @@ const MovieDetails = (props) => {
               mode="black-08"
               iconName="plus"
               label="Add Your Review"
-              href="/"
+              href={getPath('/')}
             />
           </header>
           <Slider

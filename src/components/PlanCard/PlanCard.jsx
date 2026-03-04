@@ -1,3 +1,4 @@
+import getPath from "@/utils/getPath"
 import Button from "../Button"
 import "./PlanCard.scss"
 
@@ -17,14 +18,11 @@ const PlanCard = (props) => {
       </div>
       <div className="plan-card__actions">
         <Button
-            label="Start Free Trial"
-            href="/subscriptions"
-            mode="black-08"
+          label="Start Free Trial"
+          href={getPath("/subscriptions")}
+          mode="black-08"
         />
-        <Button
-            label="Choose Plan"
-            href="/"
-        />
+        <Button label="Choose Plan" href={getPath("/subscriptions")} />
       </div>
     </div>
   )
